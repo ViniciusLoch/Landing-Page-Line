@@ -28,3 +28,56 @@ body {
     font-size: 30px;
     color: #ffffff;
 }
+
+.slideshow-container {
+    position: relative;
+    max-width: 680px;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: fade 1.5s;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Animação */
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    flex-direction: row;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(42, 41, 41, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 250px;
+}
+
+.prev {
+    left: 10px;
+    margin-left: 15px;
+}
+
+.next {
+    right: 10px;
+    margin-right: 15px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
