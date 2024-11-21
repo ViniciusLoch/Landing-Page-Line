@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start;    /* Centraliza verticalmente */
+    height: 100vh;          /* Ocupa toda a altura da janela */
+    background-color: #070707;
+}
+
+.container {
+    text-align: center;      /* Centraliza o texto */
+    padding: 20px;           /* Adiciona espaçamento interno */
+    margin-top: 10px;
+    background: #060606;     /* Fundo branco para destaque */
+    border-radius: 10px;     /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 90%;              /* Largura responsiva */
+    max-width: 800px;        /* Limita a largura máxima */
+}
+
+.container .t1 {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.container .t2 {
+    font-size: 30px;
+    color: #ffffff;
+}
