@@ -55,8 +55,7 @@ body {
 
 /* Botões de navegação */
 .prev, .next {
-    position: absolute;
-    flex-direction: row;
+    position: absolute; 
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(42, 41, 41, 0.5);
@@ -80,4 +79,46 @@ body {
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.elapsed-time-container {
+    text-align: center;
+    position: absolute;
+    top: 1240px; left: 620px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+
+
+#elapsed-time {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-box {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.time-box span {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+}
+
+.time-box p {
+    margin: 0;
+    font-size: 1em;
+    color: #ccc;
 }
