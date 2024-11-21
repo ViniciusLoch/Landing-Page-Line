@@ -1,16 +1,16 @@
 /* Estilos gerais */
 body {
-    margin: 0;
+    margin: 5;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #444444, #000000);
+    background: linear-gradient(to bottom, #373737, #000000);
     color: #fff;
     text-align: center;
 }
 
 header {
     padding: 20px;
-    background: transparent
-    margin-bottom: 20px;
+    background: transparent;
+    margin-bottom: 5px;
 }
 
 footer {
@@ -46,6 +46,7 @@ h1, h2 {
     height: 100%; /* Ajusta a imagem ao tamanho do container */
     object-fit: cover; /* Preenche o container mantendo a proporção */
     border-radius: 8px; /* Bordas arredondadas, opcional */
+    box-shadow: 15px black;
 }
 
 .prev, .next {
