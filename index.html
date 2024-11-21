@@ -8,47 +8,50 @@
     
 </head>
 <body>
-    <Section>
-        <Div class="container">
-            <h1 class="t1">22 de março de 2024 </h1>
-            <h3 class="t2">O dia em que minha vida mudou para sempre!</h3>
-        </Div>
+    <header>
+        <h1>Bem-vindo ao meu site</h1>
+    </header>
 
-        <div class="slideshow-container">
-            <div class="slide fade">
-                <img src="images\slide-line-1.jpg" alt="Foto 1">
-            </div>
-            <div class="slide fade">
-                <img src="images\slide-line-2.jpg" alt="Foto 2">
-            </div>
-            <div class="slide fade">
-                <img src="images\slide-line-3.jpg" alt="Foto 3">
-            </div>
-            <script src="script.js"></script>
+    <!-- Seção do Slide de Fotos -->
+    <section class="slideshow-container">
+        <div class="slide fade">
+            <img src="foto1.jpg" alt="Foto 1">
         </div>
+        <div class="slide fade">
+            <img src="foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="slide fade">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+
         <!-- Botões de navegação -->
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </Section>
-    <section class="sec-timer">
-        <div class="elapsed-time-container">
-           
-            <div id="elapsed-time">
-                <div class="time-box">
-                    <span id="days">00</span>
-                    <p>Dias</p>
-                </div>
-                <div class="time-box">
-                    <span id="hours">00</span>
-                    <p>Horas</p>
-                </div>
-                <div class="time-box">
-                    <span id="minutes">00</span>
-                    <p>Minutos</p>
-                </div>
-                
+    </section>
+
+    <!-- Seção do Contador -->
+    <section class="elapsed-time-container">
+        <h2>Tempo Decorrido desde 22/03/2024</h2>
+        <div id="elapsed-time">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Dias</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Segundos</p>
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
