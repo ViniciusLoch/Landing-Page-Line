@@ -14,8 +14,7 @@ function changeSlide(n) {
     showSlide(slideIndex += n);
 }
 
-// Troca automaticamente de slide a cada 5 segundos
-setInterval(() => changeSlide(1), 5000);
+
 
 // Contador de Tempo Decorrido
 const startDate = new Date("2024-03-22T00:00:00").getTime();
