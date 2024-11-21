@@ -13,39 +13,51 @@ header {
     margin-bottom: 20px;
 }
 
+footer {
+    padding: 20px;
+    background-color: #444;
+}
+
 h1, h2 {
     margin: 0 0 20px;
 }
 
-/* Estilos do Slide de Fotos */
+/* Estilo do container do slide */
 .slideshow-container {
     position: relative;
-    max-width: 800px;
-    margin: 0 auto 40px;
+    max-width: 1000px; /* Aumenta a largura máxima */
+    margin: 0 auto 40px; /* Centraliza e adiciona margem inferior */
+    overflow: hidden; /* Garante que as imagens fiquem dentro do container */
+    aspect-ratio: 4 / 3; /* Define uma proporção maior para o container */
+    background: #00000000; /* Fundo preto para evitar espaços vazios */
 }
 
+/* Estilo de cada slide */
 .slide {
     display: none;
-    position: absolute;
+    position: relative;
     width: 100%;
-    animation: fade 1.5s;
+    height: 100%; /* O slide preenche todo o container */
 }
 
+/* Imagens no slide */
 .slide img {
     width: 100%;
-    border-radius: 10px;
+    height: 100%; /* Ajusta a imagem ao tamanho do container */
+    object-fit: cover; /* Preenche o container mantendo a proporção */
+    border-radius: 8px; /* Bordas arredondadas, opcional */
 }
 
 .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.69);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .prev {
@@ -60,14 +72,12 @@ h1, h2 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-@keyframes fade {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
-}
+
 
 /* Estilos do Contador */
 .elapsed-time-container {
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #elapsed-time {
